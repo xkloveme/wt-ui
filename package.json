@@ -1,0 +1,22 @@
+{
+  "name": "wt-ui",
+  "private": true,
+  "workspaces": [
+    "packages/wt-ui-doc",
+    "packages/wt-ui"
+  ],
+  "scripts": {
+    "all": "lerna bootstrap",
+    "clear": "lerna clean && yarn workspaces run clean",
+    "dev": "lerna run --stream --sort start",
+    "build": "lerna run --stream --sort build",
+    "start": "lerna run --stream --sort start",
+    "test": "lerna run --stream --sort test",
+    "new": "plop",
+    "publish": "lerna publish"
+  },
+  "devDependencies": {
+    "lerna": "^3.13.0",
+    "vuepress": "^1.8.2"
+  }
+}
